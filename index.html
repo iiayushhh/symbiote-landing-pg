@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symbiote – use a nearby laptop’s GPU</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <!-- ===== NAVBAR ===== -->
+ <!---- <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">Symbiote</a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#team">Team</a>
+      </nav>
+      <a class="btn btn-dark btn-small" href="#how">See how it works</a>
+    </div>
+  </header>
+ 
+  <main id="top">
+ 
+    <!-- ===== HERO ===== -->
+    <section class="wrap hero">
+      <p class="pill"> Project by Team Autumn</p>
+      <h1>One network.<br><span class="mark">More computing power.</span></h1>
+      <p class="sub">
+        Symbiote lets a lower-powered laptop use the GPU of a more capable
+        laptop, over your local network or the internet.
+      </p>
+     <!---- <div class="buttons">
+        <a class="btn btn-dark" href="#how">See how it works</a>
+        <a class="btn btn-light" href="#team">Meet the team</a>
+      </div> -->
+      
+<div class="buttons">
+  <a class="btn btn-dark"
+     href="www.google.com"
+     target="_blank"
+     rel="noopener noreferrer">
+    Download 
+  </a>
+</div>
+
+      <div class="panel hero-visual">
+        <img src="images/hero.svg" alt="A weaker laptop sends a task to a stronger GPU laptop and gets the result back">
+      </div>
+    </section>
+ 
+    <!-- ===== BUILT WITH ===== -->
+    <section class="wrap strip">
+      <p>Built with</p>
+      <ul>
+        <li>Flask</li>
+        <li>Python subprocess</li>
+        <li>HTTP requests</li>
+        <li>FIFO task queue</li>
+      </ul>
+    </section>
+ 
+
+<section class="wrap problem" id="problem">
+  <p class="label">The Problem</p>
+
+  <h2>Powerful computing shouldn't require an expensive laptop.</h2>
+
+  <p class="problem-text">
+    Many laptops struggle with GPU-intensive tasks.
+    Upgrading hardware is expensive, while cloud computing
+    can involve recurring costs and internet dependency.
+  </p>
+
+  <p class="problem-highlight">
+    What if you could use the GPU power of another laptop instead?
+  </p>
+</section>
+
+
+    <!-- ===== FEATURES ===== -->
+    <section class="wrap" id="features">
+ 
+      <!-- feature 1 -->
+      <div class="row" id="how">
+        <div class="text">
+          <p class="label">How it works</p>
+          <h2>Send a task. Get the result back.</h2>
+          <p>
+            Your weaker laptop sends its code to the host over HTTP. A Flask
+            server on the host receives it, runs it, and sends the output
+            back. You keep working on your own laptop.
+          </p>
+          <p>Laptops pair securely first, so only trusted machines can connect.</p>
+        </div>
+        <div class="panel">
+          <img src="images/workflow.svg" alt="Workflow: pair, send task, Flask server, task queue, run and save, output returns to the client">
+        </div>
+      </div>
+ 
+      <!-- feature 2 -->
+     <!---- <div class="row reverse">
+        <div class="text">
+          <p class="label">Task queue</p>
+          <h2>One queue. One task at a time.</h2>
+          <p>
+            Every task goes into a shared queue and runs in the order it
+            arrived. The host saves each task’s output and status before it
+            starts the next one.
+          </p>
+        </div> 
+        <div class="panel">
+          <img src="images/queue.svg" alt="FIFO queue: Task 1 runs first, then Task 2, Task 3 and Task 4">
+        </div>
+      </div> -->
+ 
+      <!-- feature 3 -->
+      <div class="row">
+        <div class="text">
+          <p class="label">Control</p>
+          <h2>The host stays in control.</h2>
+          <p>The owner of the GPU laptop decides what to share, and when.</p>
+        </div>
+        <div class="panel panel-list">
+          <ul>
+            <li>Chooses what to share</li>
+            <li>Chooses when to share</li>
+            <li>Approves every laptop that pairs</li>
+          </ul>
+        </div>
+      </div>
+ 
+   
+ 
+    <!-- ===== WHY WE BUILT THIS ===== -->
+    <section class="wrap why">
+      <p class="label">Why we built this</p>
+      <blockquote>“My laptop can run the app, but its GPU can’t keep up.”</blockquote>
+      <p>
+        Older or integrated GPUs struggle with heavy work. A new laptop is
+        expensive, and cloud services cost money and need internet. Meanwhile,
+        another laptop nearby may have GPU power sitting idle.
+      </p>
+    </section>
+ 
+    <!-- ===== CTA ===== -->
+    <!--<section class="cta">
+      <div class="wrap">
+        <h2>Powerful software shouldn’t need a powerful laptop.</h2>
+        <p>Symbiote is a concept we are building to fix that.</p>
+        <a class="btn btn-white" href="#how">See how it works</a>
+      </div>
+    </section>
+ 
+    <!-- ===== TEAM ===== -->
+    <section class="wrap team" id="team">
+      <p class="label">Team</p>
+      <h2>Team Autumn</h2>
+      <ul>
+        <li>Dipanshu Singh</li>
+        <li>Ayush Singh</li>
+        <li>Harsh Katiyar</li>
+      </ul>
+    </section>
+ 
+  </main>
+ 
+  <footer class="footer">
+    <div class="wrap">
+      <span>Symbiote</span>
+      <span>A concept project by Team Autumn</span>
+    </div>
+  </footer>
+ 
+</body>
+</html>
+ 
